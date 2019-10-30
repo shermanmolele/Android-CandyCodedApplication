@@ -82,7 +82,7 @@ public class DetailActivity extends AppCompatActivity {
     }
 
     private void createShareIntent() {
-        Intent shareIntent = new Intent(ACTION_SEND);
+        Intent shareIntent = new Intent(Intent.ACTION_SEND);
         shareIntent.setType("text/plain");
         String shareDescription = SHARE_DESCRIPTION + mCandyImageUrl + HASHTAG_CANDYCODED;
         shareIntent.putExtra(Intent.EXTRA_TEXT, shareDescription );
